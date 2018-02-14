@@ -8,7 +8,7 @@ Fixed-point DSP
 Instruction cycle time mín 1.39 ns  
 Word-lenght: 2 channels witch 16-bit each. 
 
-### DSP Starter kit [TI DSK 6416](http://c6000.spectrumdigital.com/dsk6416/V3/docs/dsk6416_TechRef.pdf)
+### Development Kit [TMS320C6416T DSK](http://c6000.spectrumdigital.com/dsk6416/V3/docs/dsk6416_TechRef.pdf)
 
 CODEC: [TLV320AIC23](http://www.ti.com/lit/ds/symlink/tlv320aic23.pdf)  
 Sampling Frequency: 8 kHz, 16 kHz, 24 kHz, 32 kHz, 44.1 kHz, 48 kHz and 96 kHz  
