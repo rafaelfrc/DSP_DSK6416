@@ -8,7 +8,7 @@ Fixed-point DSP
 Instruction cycle time mín 1.39 ns  
 Word-lenght: 2 channels witch 16-bit each. 
 
-### DSP Starter kit [TI DSK 6416](http://c6000.spectrumdigital.com/dsk6416/)
+### DSP Starter kit [TI DSK 6416](http://c6000.spectrumdigital.com/dsk6416/V3/docs/dsk6416_TechRef.pdf)
 
 CODEC:[TLV320AIC23](http://www.ti.com/lit/ds/symlink/tlv320aic23.pdf)  
 Sampling Frequency: 8 kHz, 16 kHz, 24 kHz, 32 kHz, 44.1 kHz, 48 kHz and 96 kHz  
@@ -17,18 +17,15 @@ Software Control Via TI McBSP-Compatible Multiprotocol Serial Port
 Amplitude: 6 Vpp
 
 ## Environment:
-S.O. M$ Windows 10 (*nix systems requires offboard JTAG Emulators & Drivers)  
+C Programming language: ANSI C 1989 Version  
+Compiler TMS320C6000 Optimizing Compiler v7.4  
 IDE Code Composer Studio v7  
-Compiler XXXX  
-
-### Compiler Options:
+S.O. M$ Windows 10 (*nix systems requires offboard JTAG Emulator)
 
 ### APIs:
 
-Compatibility in C6000 family and HAL: [CSL](http://processors.wiki.ti.com/index.php/Chip_support_library#C62x.2C_C671x.2C_C641x.2C_DM64x_Devices)  
-Board support library: [BSL](http://c6000.spectrumdigital.com/dsk6416/)  
-
-## References:
+Chip Support Library: [CSL](http://processors.wiki.ti.com/index.php/Chip_support_library#C62x.2C_C671x.2C_C641x.2C_DM64x_Devices)  
+Board support library: [BSL](http://c6000.spectrumdigital.com/dsk6416/V3/files/DSK6416.zip)  
 
 ***
 Prof Dr [Fabrício Simões](http://www.ifba.edu.br/professores/fsimoes/), thanks for the guidance!
