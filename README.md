@@ -2,7 +2,7 @@
 Audio Processing Studies and Digital Communications with Digital Signal Processor TMS320C6416
 
 ## Target:
-### [DSP TMS320C6416](http://www.ti.com/lit/ds/symlink/tms320c6416.pdf)
+### Digital Signal Processor [TMS320C6416](http://www.ti.com/lit/ds/symlink/tms320c6416.pdf)
 
 Fixed-point DSP  
 Instruction cycle time mín 1.39 ns  
