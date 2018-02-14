@@ -4,9 +4,9 @@ Audio Processing Studies and Digital Communications with Digital Signal Processo
 ## Target:
 ### [DSP TMS320C6416](http://www.ti.com/lit/ds/symlink/tms320c6416.pdf)
 
-Fixed-point DSP
-Instruction cycle time mín 1.39 ns
-Word-lenght: 2 channels witch 16-bit each.
+Fixed-point DSP 
+Instruction cycle time mín 1.39 ns 
+Word-lenght: 2 channels witch 16-bit each. 
 
 ### DSP Starter kit [TI DSK 6416](http://c6000.spectrumdigital.com/dsk6416/)
 
