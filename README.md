@@ -20,10 +20,10 @@ Amplitude: 6 Vpp
 C Programming language: ANSI C 1989 Version  
 Compiler [TMS320C6000 Optimizing Compiler v7.4](http://www.ti.com/lit/ug/spru187u/spru187u.pdf)  
 IDE [Code Composer Studio v7](http://processors.wiki.ti.com/index.php/Download_CCS#Code_Composer_Studio_Version_7_Downloads)  
-S.O. M$ Windows 10 (*nix systems requires offboard JTAG Emulator)
+S.O. M$ Windows 10 (*nix systems requires offboard JTAG Emulator)  
+[Target Configuration](target.md)
 
 ### APIs:
-
 Chip Support Library: [CSL](http://processors.wiki.ti.com/index.php/Chip_support_library#C62x.2C_C671x.2C_C641x.2C_DM64x_Devices)  
 Board support library: [BSL](http://c6000.spectrumdigital.com/dsk6416/V3/files/DSK6416.zip)  
 

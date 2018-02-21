@@ -1,0 +1,49 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="post"
+ProjectDir="C:\CCStudio\examples\dsk6416\bsl\post\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="boot.asm"
+Source="post.c"
+Source="post.cdb"
+Source="userlinker.cmd"
+
+[Generated Files]
+Source="postcfg.cmd"
+Source="postcfg.s62"
+Source="postcfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\CCStudio\examples\dsk6416\bsl\post\Debug" -i"." -i"$(Install_dir)\c6000\dsk6416\include" -d"_DEBUG" -d"CHIP_6416" -ml3 -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"C:\CCStudio\examples\dsk6416\bsl\post\Release" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\post.out" -x -i"$(Install_dir)\c6000\dsk6416\lib" -l"dsk6416bsl.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\post.out" -x
+
+["postcfg.cmd" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["postcfg.cmd" Settings: "Release"]
+ExcludeFromBuild=true
+

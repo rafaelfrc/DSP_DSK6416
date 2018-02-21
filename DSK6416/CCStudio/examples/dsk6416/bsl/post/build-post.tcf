@@ -1,0 +1,50 @@
+/*
+ *  ======== build-post.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 10-Nov-2004 mw Changed CPU frequency to 1000MHz
+ *! 08-Dec-2003 mw Shortened tconf path
+ *! 29-Sep-2003 mw Changed CPU frequency to 720MHz
+ *! 28-Jan-2003 mw Created
+ *
+ * To create post.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf -Dconfig.tiRoot="%TI_DIR%" build-post.tcf
+ * 
+ */
+
+/* Load 6416 DSK platform */
+utils.loadPlatform("Dsk6416");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Set CPU frequency to 1000MHz */
+GBL.CLKOUT = 1000.0000;
+
+/* Enable caching of SDRAM */
+GBL.C641XCONFIGUREL2 = 1;
+GBL.C641XMARCE0 = 1;
+
+/* Disable RTDX */
+RTDX.ENABLERTDX = 0;
+
+/* Disable Task Manager */
+TSK.ENABLETSK = 0;
+
+/* Insert timer ISR */
+HWI_INT15.interruptSource = Timer_1;
+HWI_INT15.fxn = prog.extern("sleepIsr");
+HWI_INT15.useDispatcher = 1;
+
+/* Insert BOOT memory section and adjust ISRAM */
+ISRAM.len = 0x000ffb00;
+ISRAM.base = 0x00000400;
+BOOT = MEM.create("BOOT");
+BOOT.len = 0x00000400;
+BOOT.base = 0x00000000;
+
+/* Generate .cdb file */
+prog.gen("post");

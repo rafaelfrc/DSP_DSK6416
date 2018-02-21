@@ -1,0 +1,851 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./dsk6416_releasenotes1_files/filelist.xml">
+<title>TMS320C6416 DSK Release Notes</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Tonyc</o:Author>
+  <o:LastAuthor>Vss6Admin</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>76</o:TotalTime>
+  <o:Created>2004-11-13T14:15:00Z</o:Created>
+  <o:LastSaved>2004-11-13T14:22:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>943</o:Words>
+  <o:Characters>5377</o:Characters>
+  <o:Company>Spectrum Digital Incorporated</o:Company>
+  <o:Lines>44</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>6603</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DoNotHyphenateCaps/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>3</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DoNotShadeFormData/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:174271750;
+	mso-list-template-ids:1177177358;}
+@list l0:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.75in;}
+@list l0:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.75in;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l1
+	{mso-list-id:330910726;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1326173820 -334835700 -757970210 -1441509172 -89218790 -433425198 -35637398 1857174620 397718424 1691360684;}
+@list l1:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:335622385;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1689741660 -1169004696 1640010076 -164317300 371211898 1233671470 1452833448 -133237706 1130530390 500866304;}
+@list l3
+	{mso-list-id:360324225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1927702576 -1984293358 554841766 271764822 -391721818 -1277245142 -1026634578 -1053281168 722506784 210642614;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:383725675;
+	mso-list-template-ids:1327030524;}
+@list l4:level1
+	{mso-level-text:"%1\.0";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.5in;}
+@list l4:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.5in;}
+@list l4:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.75in;}
+@list l4:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.75in;}
+@list l4:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	margin-left:4.0in;
+	text-indent:-1.0in;}
+@list l4:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	margin-left:4.5in;
+	text-indent:-1.0in;}
+@list l4:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:5.0in;
+	mso-level-number-position:left;
+	margin-left:5.0in;
+	text-indent:-1.0in;}
+@list l5
+	{mso-list-id:420182139;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-976969728 -1795895944 633912316 633607922 -1763962964 -1757884996 1673549902 -36272224 -1357329084 1016209292;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:662705406;
+	mso-list-type:hybrid;
+	mso-list-template-ids:817775994 -291197504 184572246 -1897731430 -903736822 1815140772 436111154 705468690 -346005328 -638791560;}
+@list l7
+	{mso-list-id:744037246;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-262661650 850451938 -473673214 -1394948452 -1056683566 1975273510 838655118 -812085106 848847706 75016094;}
+@list l8
+	{mso-list-id:787772217;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1047961770 1212696072 -267846828 2066916318 -146348816 -2095834694 1890614836 464946892 -439971176 1609484464;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l9
+	{mso-list-id:811992332;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2118408230 844919124 -41800044 987916790 -2018836528 1876439000 -766061578 900638360 2138222268 131231016;}
+@list l9:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:948318010;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-559150658 200691372 2024984566 -1450921440 407905392 592612054 -1530385988 1696750950 -1654120502 -626998526;}
+@list l11
+	{mso-list-id:1388602846;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1642233610 584981050 -2052040948 -852870846 -472732118 -229748756 1973954736 736670130 -1982296958 -326739022;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l12
+	{mso-list-id:1478262333;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1713789282 -2068939126 261125846 1325802820 718565914 -582446774 787247064 444206394 -1119445800 -1173563760;}
+@list l13
+	{mso-list-id:1767336297;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1561518132 -526470768 1715485848 571245818 -214791392 -629474190 1468170734 77203396 675940870 78043172;}
+@list l13:level1
+	{mso-level-start-at:3;
+	mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14
+	{mso-list-id:1815677051;
+	mso-list-type:hybrid;
+	mso-list-template-ids:376745280 -539039692 -894565332 1227113796 -1860559950 -708253516 -972893732 1968719002 484600484 -1700134866;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l14:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l15
+	{mso-list-id:1868057128;
+	mso-list-type:hybrid;
+	mso-list-template-ids:766913216 -1919525768 -979445612 1035395474 1053358540 -888009870 -1924767436 -1989387174 1003101050 1900036394;}
+@list l16
+	{mso-list-id:2027365915;
+	mso-list-type:hybrid;
+	mso-list-template-ids:803759792 81421624 1871642236 -1919539878 1874898936 1621414938 1900172966 -1614114444 -1855784780 -659229618;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in;text-justify-trim:
+punctuation'>
+
+<div style='width:901;height:9946'>
+
+<div class=Section1>
+
+<h1><span style='font-family:Arial'>Release notes for TMS320C6416 DSK<o:p></o:p></span></h1>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Spectrum Digital Inc <span style='mso-tab-count:6'>                                                               </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>12502 Exchange Dr.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Suite 440<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Stafford, Texas 77477</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><span style="mso-spacerun:
+yes">                                  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Web:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><span style='mso-tab-count:2'>                </span><a
+href="http://www.spectrumdigital.com/">http://www.spectrumdigital.com/</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Ftp:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><span style='mso-tab-count:2'>                  </span><a
+href="ftp://ftp.spectrumdigital.com/pub/index.htm">ftp://ftp.spectrumdigital.com/pub/index.htm</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Support:<span style='mso-tab-count:1'>           </span></span></b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><a
+href="mailto:support@spectrumdigital.com">mailto:support@spectrumdigital.com</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Phone:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <span style='mso-tab-count:1'>            </span>281-494-4500<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Fax:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><span style='mso-tab-count:2'>                 </span>281-494-5310<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Processor Supported</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>TMS320C6416 on TMS320C6416 DSK</span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Operating Systems Supported:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Windows 2000 with service pack 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Windows XP<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>USB Connection:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Version 1.10 or 2.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Code Composer version supported:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Version 3.0</span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Product Release</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><span style='mso-tab-count:1'>          </span>3.00</span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Release Date</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><span style='mso-tab-count:2'>               </span>12-Nov-2004</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-pagination:
+none;mso-list:l4 level1 lfo34;tab-stops:list .25in;mso-layout-grid-align:none;
+text-autospace:none'><a name=History><![if !supportLists]><b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>1.0<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>History</span></b></a><b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'>&nbsp;</p>
+
+<table border=1 cellspacing=0 cellpadding=0 width="97%" style='width:97.0%;
+ border-collapse:collapse;border:none;mso-border-alt:outset #111111 .75pt;
+ mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td width="22%" style='width:22.38%;border:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width="32%" style='width:32.84%;border:inset #111111 .75pt;border-left:
+  none;mso-border-left-alt:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width="44%" style='width:44.78%;border:inset #111111 .75pt;border-left:
+  none;mso-border-left-alt:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="22%" style='width:22.38%;border:inset #111111 .75pt;border-top:
+  none;mso-border-top-alt:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Version 1</span></p>
+  </td>
+  <td width="32%" style='width:32.84%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>600 MHz DSP, 100 MHz EMIF</span></p>
+  </td>
+  <td width="44%" style='width:44.78%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Board 3, CPLD 2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="22%" style='width:22.38%;border:inset #111111 .75pt;border-top:
+  none;mso-border-top-alt:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Version 2</span></p>
+  </td>
+  <td width="32%" style='width:32.84%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>720 MHz DSP, 120 MHz EMIF</span></p>
+  </td>
+  <td width="44%" style='width:44.78%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>Board 4,
+  CPLD 3<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="22%" style='width:22.38%;border:inset #111111 .75pt;border-top:
+  none;mso-border-top-alt:inset #111111 .75pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>Version 3</span></p>
+  </td>
+  <td width="32%" style='width:32.84%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>1000 MHz DSP, 125 MHz EMIF</span></p>
+  </td>
+  <td width="44%" style='width:44.78%;border-top:none;border-left:none;
+  border-bottom:inset #111111 .75pt;border-right:inset #111111 .75pt;
+  mso-border-top-alt:inset #111111 .75pt;mso-border-left-alt:inset #111111 .75pt;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>Board 5,
+  CPLD 4<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>2.0 Installation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>See Quick Start guide shipped with product for step by step
+install.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>3.0 Some Basics on How it Works<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>When the DSK is powered up the embedded USB controller will
+boot up and wait for enumeration from the host.<span style="mso-spacerun:
+yes">  </span>Once the host has enumerated, Code Composer can be started. When
+a USB device is enumerated it will show up under the Windows Hardware Device
+Manager.<span style="mso-spacerun: yes">  </span>When Code Composer is started
+the emulation driver will make contact with the DSK (see led DS201 flash).<span
+style="mso-spacerun: yes">  </span>It will then download the emulation firmware
+to the DSK.<span style="mso-spacerun: yes">  </span>Once that is complete the
+firmware will disconnect from the USB bus and reconnect as an emulator.<span
+style="mso-spacerun: yes">  </span>When the LED DS201 is on solid the USB
+controller is disconnected from the USB bus. DS201 will normally be on solid
+for ~1 second to meet the USB disconnect reconnect timing.<span
+style="mso-spacerun: yes">  </span>Once connected DS201 will flash during
+emulation activity.<span style="mso-spacerun: yes">  </span>When you exit Code
+Composer the DDB will once again disconnect from the USB bus and reconnect in
+boot mode, ready for the next debug session.<span style="mso-spacerun: yes"> 
+</span>The C6416DSK icon is used to load the emulation app then start CCS.<span
+style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>The USB controller is not affected by the DSK reset
+push-button.<span style="mso-spacerun: yes">  </span>When the DSK is powered on
+the USB controller gets a power on reset.<span style="mso-spacerun: yes"> 
+</span>The USB controller does NOT pull a hardware reset on the C6416 processor
+or hold the C6416 in reset. This allows the DSK to run standalone.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>To use the external emulator JTAG port, power off the DSK,
+install the JTAG cable and power the DSK. By default the embedded USB
+controller will supply JTAG signals to the C6416.<span style="mso-spacerun:
+yes">  </span>When the external JTAG cable is plugged, in the JTAG signals are
+switched asynchronously to the external emulator.<span style="mso-spacerun:
+yes">  </span>This can cause glitches on the C6416 JTAG signals.<span
+style="mso-spacerun: yes">  </span>With the external emulator is plugged in
+when power is off, the DSK will startup in external emulator mode with clean
+JTAG signals<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>You have to be logged on as an administrator to install USB
+devices on Windows 2000/XP.<span style="mso-spacerun: yes">  </span>Under
+Windows each time you move your USB cable to a new port on the same machine
+this is a new install. This can be annoying if you move your USB cable around
+to different ports.<span style="mso-spacerun: yes">  </span>During the install
+process you can cycle through installing the DSK on all your USB ports.<span
+style="mso-spacerun: yes">  </span>This &quot;preps&quot; your machine to run
+the DSK on any of its USB ports.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>4.0 Limitations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>4.0.1 Single DSK per PC<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Multiple DSKs on one host are NOT supported.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>4.027 </span></i></b><b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'>SDSsq19464 Admin privileges needed
+for Code Composer Studio installation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>Release Note</span></i></b><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+CCS requires access to specific registry entries when installing and using the
+tool. In certain installations of CCS, while in user mode, you are prevented
+from writing to the registry. The following instructions provide details of how
+to install CCS with Administrative privileges and allow write access in the
+registry as a user.&nbsp; <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>Note: If you need to run
+CCS 1.2 together with CCS 2.0 and are using DSP/BIOS, and you wish to continue
+using the version of DSP/BIOS that was included in CCS 1.2, you must run with
+Administrative privileges. Failure to run with Administrative privileges will
+potentially result in incorrect operation of the DSP/BIOS configuration tool
+for CCS 1.20.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><o:p></o:p></span></p>
+
+<p><b><i><span style='font-size:10.0pt;font-family:Arial'>Windows NT</span></i></b><b><i><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></i></b></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>The Code Composer Studio
+product needs to be installed using an account with Administrator privileges:</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>1. Log in as an
+administrator.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>2. Install the product
+by running &lt;setup.exe&gt;.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>3. If the installation
+process prompts for a reboot, the administrator must log in again prior to first
+use. This will allow the installation process to update registry settings after
+a reboot.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>Once this procedure is
+complete users belonging to the &quot;Users&quot; group may fully utilize the
+Code Composer Studio product.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><b><i><span style='font-size:10.0pt;font-family:Arial'>Windows 2000</span></i></b><b><i><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></i></b></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>Similar to the procedure on
+Windows NT, the Code Composer Studio product needs to be installed using an
+account with Administrator privileges. If the installation process prompts for
+a reboot the administrator must log in again prior to first use. This will
+allow the installation process to update registry settings after a reboot.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>However, the
+&quot;Users&quot; account under Windows 2000 is, by default, significantly more
+restricted than a &quot;Users&quot; account under Windows NT. One of the new
+restrictions is that the &quot;Users&quot; group has read-only access to all
+parts of the registry. During its normal course of operation, Code Composer
+Studio reads and writes configuration and session information to the registry.
+There are two possible actions that may be taken to allow non-administrator
+users to use Code Composer Studio:</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>1. The administrator may
+modify registry permissions for the areas of registry that are used by Code
+Composer Studio. The procedure to do this is as follows:</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>a) Log in as an
+administrator.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>b) Choose
+&quot;Start-&gt;Run&quot; from the Windows 2000 Start menu.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>c) Type
+&quot;regedt32&quot; (not &quot;regedit&quot;) to bring up the Registry Editor.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>d) From the
+&quot;Window&quot; menu, select &quot;HKEY_LOCAL_MACHINE on the Local
+Machine&quot;.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>e) Expand the
+&quot;SOFTWARE&quot; key.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>f) Locate and select
+the sub-key &quot;GODSP&quot;.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>g) With
+&quot;GODSP&quot; selected, choose &quot;Security Permissions...&quot; from the
+menu.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:
+Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>h) In the upper half of
+the &quot;Permissions for GODSP&quot; window there will be a list of all the
+users and groups that access the key.</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>i) Select the
+&quot;Users&quot; group.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>j) In the &quot;Permissions:&quot;
+box, locate the item &quot;Full Control&quot; and check the corresponding box
+under &quot;Allow&quot;.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>k) Repeat steps
+&quot;e&quot; through &quot;i&quot; for &quot;HKLM\Software\Texas
+Instruments.&quot;</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>2. The second option is to
+allow users that will be using the Code Composer Studio product access via a
+&quot;Power User&quot; account. &quot;Power User&quot; accounts on Windows 2000
+provide an access level similar to that of a &quot;User&quot; account on WinNT.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style="mso-spacerun: yes"> </span></span><o:p></o:p></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

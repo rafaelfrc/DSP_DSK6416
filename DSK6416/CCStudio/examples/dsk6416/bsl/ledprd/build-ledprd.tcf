@@ -1,0 +1,44 @@
+/*
+ *  ======== build-ledprd.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 10-Nov-2004 mw Changed CPU frequency to 1000MHz
+ *! 08-Dec-2003 mw Shortened tconf path
+ *! 29-Sep-2003 mw Changed CPU frequency to 720MHz
+ *! 28-Jan-2003 mw Created
+ *
+ * To create ledprd.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf -Dconfig.tiRoot="%TI_DIR%" build-ledprd.tcf
+ * 
+ */
+
+/* Load 6416 DSK platform */
+utils.loadPlatform("Dsk6416");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Enable all heaps, RTDX, Real Time Analysis, and the Task Mangager */
+bios.enableFullBios(prog);
+
+/* Set CPU frequency to 1000MHz */
+GBL.CLKOUT = 1000.0000;
+
+/* Enable caching of SDRAM */
+GBL.C641XCONFIGUREL2 = 1;
+GBL.C641XMARCE0 = 1;
+
+/* Disable Task Manager */
+TSK.ENABLETSK = 0;
+
+/* Define the PRD blinkLED0 */
+var blinkLED = PRD.create("PRD_blinkLED0");
+blinkLED.comment = "Toggles LED #0 every 200ms";
+blinkLED.fxn = prog.extern("blinkLED0");
+blinkLED.period = 200;
+
+/* Generate .cdb file */
+prog.gen("ledprd.cdb");

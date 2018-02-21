@@ -1,0 +1,39 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="volume"
+ProjectDir="C:\CCStudio\tutorial\dsk6416\volume1\"
+ProjectType=Executable
+CPUFamily=TMS320C62XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\..\c6000\cgtools\lib\rts6400.lib"
+Source="load.asm"
+Source="vectors.asm"
+Source="volume.c"
+Source="volume.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\CCStudio\tutorial\dsk6416\volume1\Debug" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-q -fr"C:\CCStudio\tutorial\dsk6416\volume1\Release" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -heap0x400 -o".\Debug\volume.out" -stack0x400 -x
+
+["Linker" Settings: "Release"]
+Options=-c -heap0x400 -o".\Release\volume.out" -stack0x400 -x
+

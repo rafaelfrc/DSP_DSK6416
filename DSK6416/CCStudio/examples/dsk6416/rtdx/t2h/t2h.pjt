@@ -1,0 +1,83 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="t2h"
+ProjectDir="C:\ti\examples\dsk6416\rtdx\t2h\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="HS_Debug"
+Config="HS_Release"
+Config="Release"
+
+[Source Files]
+Source="..\..\..\..\c6000\cgtools\lib\rts6400.lib"
+Source="..\..\..\..\c6000\rtdx\lib\rtdx64xx.lib"
+Source="..\..\..\..\c6000\rtdx\lib\rtdxhs.lib"
+Source="..\shared\intvecs6416.asm"
+Source="t2h.c"
+Source="..\shared\c6416.cmd"
+
+["Debug" Settings]
+InitialBuildCmd=IF NOT EXIST Debug MKDIR Debug
+
+["HS_Debug" Settings]
+InitialBuildCmd=IF NOT EXIST HS_Debug MKDIR HS_Debug
+
+["HS_Release" Settings]
+InitialBuildCmd=IF NOT EXIST HS_Release MKDIR HS_Release
+
+["Release" Settings]
+InitialBuildCmd=IF NOT EXIST Release MKDIR Release
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"C:\ti\examples\dsk6416\rtdx\t2h\Debug" -i"..\shared" -d"_DEBUG" -ml3
+
+["Compiler" Settings: "HS_Debug"]
+Options=-g -fr"C:\ti\examples\dsk6416\rtdx\t2h\HS_Debug" -i"..\shared" -d"_DEBUG" -d"HSRTDX" -ml3
+
+["Compiler" Settings: "HS_Release"]
+Options=-o3 -fr"C:\ti\examples\dsk6416\rtdx\t2h\HS_Release" -i"..\shared" -d"NDEBUG" -d"HSRTDX" -ml3
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr"C:\ti\examples\dsk6416\rtdx\t2h\Release" -i"..\shared" -d"NDEBUG" -ml3
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "HS_Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "HS_Release"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\t2h.map" -o".\Debug\t2h.out" -w -x
+
+["Linker" Settings: "HS_Debug"]
+Options=-c -m".\HS_Debug\t2h.map" -o".\HS_Debug\HS_t2h.out" -w -x
+
+["Linker" Settings: "HS_Release"]
+Options=-c -m".\HS_Release\t2h.map" -o".\HS_Release\HS_t2h.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\t2h.map" -o".\Release\t2h.out" -w -x
+
+["..\..\..\..\c6000\rtdx\lib\rtdx64xx.lib" Settings: "HS_Debug"]
+ExcludeFromBuild=true
+
+["..\..\..\..\c6000\rtdx\lib\rtdx64xx.lib" Settings: "HS_Release"]
+ExcludeFromBuild=true
+
+["..\..\..\..\c6000\rtdx\lib\rtdxhs.lib" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\..\..\..\c6000\rtdx\lib\rtdxhs.lib" Settings: "Release"]
+ExcludeFromBuild=true
+

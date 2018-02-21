@@ -1,0 +1,31 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="tsk_audio"
+ProjectDir="C:\CCStudio\examples\dsk6416\bios\audio\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="tsk_audio.c"
+Source="tsk_audio.cdb"
+
+[Generated Files]
+Source="tsk_audiocfg.cmd"
+Source="tsk_audiocfg.s62"
+Source="tsk_audiocfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -eoo64 -fr".\Debug" -i"." -d"CHIP_6416" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v64
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\tsk_audio.out" -x -l"c6x1x_edma_mcbsp.l64" -l"dsk6416_edma_aic23.l64" -l"pio.l64"
+
